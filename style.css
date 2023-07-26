@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-background {
+    width: 50vw;
+    height: 700px;
+
+    box-shadow: 4px 4px 15px 5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #7796C5 0%, #E4C0C0 100%);
+
+    padding: 20px;
+}
+
+.container-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.weather-item {
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+}
+
+.weather-item:last-child {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.item1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.nameCity {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #ffff;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.imgWeather figcaption {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #ffff;
+    position: absolute;
+    bottom: 30px;
+}
+
+.item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.item2 article {
+    display: flex;
+    gap: 5px;
+}
+
+.item2 h2 {
+    font-size: 9rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.item2 article {
+    font-size: 3rem;
+}
