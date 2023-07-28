@@ -36,7 +36,6 @@ body {
 }
 
 .weather-item {
-    border: 2px solid black;
     width: auto;
     height: 300px;
 }
@@ -75,16 +74,22 @@ body {
 }
 
 .item2{
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    align-items: start;
+    justify-content: end;
+    gap: 20px;
     padding: 10px;
 }
 
 .item2 article {
     display: flex;
     gap: 5px;
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.8;
 }
 
 .item2 h2 {
@@ -93,7 +98,81 @@ body {
     color: #fff;
     opacity: 0.9;
 }
+    
 
-.item2 article {
-    font-size: 3rem;
+.item2 article span:last-child {
+    color: rgb(113, 113, 228);
+}
+
+.item3 {
+    padding: 30px;
+}
+
+.wather-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#weather-details_list {
+    display: flex;
+    gap: 15px;
+}
+
+.weather-details-items {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.weather-details-items.active {
+    border-bottom: 3px solid rgb(248, 248, 255);
+    opacity: 1;
+}
+
+.wather-details span i {
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.wather-details span i.active {
+    opacity: 1;
+}
+
+.weather-previsions {
+    margin-top: 30px;
+}
+
+.wather-previsions_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.weather-prevision-items {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-prevision-date{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.weather-prevision-grade{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0.8;
 }
